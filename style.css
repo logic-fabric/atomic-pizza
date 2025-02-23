@@ -1,5 +1,9 @@
 :root {
   --primary: #da2f04;
+  --secondary: #33670a;
+
+  --border: #ddd;
+
   --background: #f4f4f4;
 }
 
@@ -18,19 +22,27 @@ body {
   background: var(--background);
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
 h1 {
+  margin: 0 0 1.5rem 0;
+
   color: var(--primary);
   font-size: 2rem;
-  font-weight: 600;
 }
 
 #root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  max-width: 1440px;
-  height: 100vh;
+  max-width: 1024px;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 2rem 32px;
 }
@@ -38,4 +50,33 @@ h1 {
 p.no-js {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.card {
+  width: 320px;
+  margin: 0.5rem 8px;
+  padding: 1.5rem 24px;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+
+  text-align: left;
+
+  background: white;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+
+  color: var(--secondary);
+}
+
+.card h3 {
+  margin: 0 0 0.75rem 0;
+}
+
+.card .price {
+  margin: 1rem 0 0 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
 }
