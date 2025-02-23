@@ -1,0 +1,41 @@
+:root {
+  --primary: #da2f04;
+  --background: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+
+  background: var(--background);
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 32px;
+}
+
+p.no-js {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
