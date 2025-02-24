@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import { PizzaCard } from "./components/PizzaCard";
 
 export function App() {
