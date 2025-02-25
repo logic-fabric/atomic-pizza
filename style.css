@@ -52,6 +52,15 @@ p.no-js {
   font-weight: 400;
 }
 
+.menu-and-order {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   width: 320px;
   margin: 0.5rem 8px;
